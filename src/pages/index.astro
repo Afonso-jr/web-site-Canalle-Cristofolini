@@ -8,14 +8,16 @@ import ThemeButtons from "../componentes/themeButtons/themeButtons.astro";
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Fast, modern websites built for performance, SEO, and an exceptional user experience.">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Fast & Modern Websites</title>
 		<script is:inline>
 			const saved = localStorage.getItem("theme");
-	  
+		
 			if (saved === "dark") {
 			  document.documentElement.classList.add("dark");
 			} else if (!saved) {
