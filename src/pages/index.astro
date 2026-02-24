@@ -1,8 +1,6 @@
 ---
 import "../styles/global.css";
-import Styles from "../styles/index/index-page.module.css";
-const nome = "Afonso";
-import ThemeButtons from "../componentes/themeButtons/themeButtons.astro";
+import Styles from "../styles/index-page/index-page.module.css";
 ---
 
 <html lang="en">
@@ -12,28 +10,13 @@ import ThemeButtons from "../componentes/themeButtons/themeButtons.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<meta name="description" content="Fast, modern websites built for performance, SEO, and an exceptional user experience.">
 		<meta name="generator" content={Astro.generator} />
 		<title>Fast & Modern Websites</title>
-		<script is:inline>
-			const saved = localStorage.getItem("theme");
-		
-			if (saved === "dark") {
-			  document.documentElement.classList.add("dark");
-			} else if (!saved) {
-			  const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-			  if (systemDark) document.documentElement.classList.add("dark");
-			}
-		</script>
-	</head>
 	<body>
 		<section class={ Styles.hero }>
-			<h1>Título Maneiro para um caralho</h1>
-			<h2>Olá {nome}</h2>
-			<ThemeButtons />
-			<div class="box red"></div>
-			<div class="box blue"></div>
-			<div class="box green"></div>
+			<h1 class="title">Título Maneiro para um caralho</h1>
 		</section>
 	</body>
 </html>

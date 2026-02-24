@@ -5,10 +5,3 @@
     gap: var(--core-font-size-md);
     margin-top: var(--core-font-size-8xl);
 }
-
-.buttonWrapper {
-    display: flex;
-    flex-direction: column; 
-    gap: var(--core-font-size-xs);
-    width: 200px;    
-}

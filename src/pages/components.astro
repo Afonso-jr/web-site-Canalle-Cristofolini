@@ -1,16 +1,60 @@
 ---
 import "../styles/global.css";
-import { Button } from "../componentes/button/button";
+import Styles from "../styles/components-page/components-page.module.css";
 ---
 
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fast, modern websites built for performance, SEO, and an exceptional user experience."
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Componentes</title>
   </head>
   <body>
-    <h1>Componentes</h1>
-    <p>Aqui ficarão os componentes reutilizáveis.</p>
-    <Button label="Voltar para Home" />
+    <section class={ Styles.sectionWrapper }>
+      <div class={ Styles.bordWrapper }>
+        <div class={ Styles.titleWrapper }>
+          <h1 class={ Styles.title }>Type/Display</h1>
+        </div>
+        <div class={ Styles.titlesWrapper }>
+          <h1 class={ Styles.title1 }>Heading</h1>
+          <h1 class={ Styles.title2 }>Heading</h1>
+          <h1 class={ Styles.title3 }>Heading</h1>
+          <h1 class={ Styles.title4 }>Heading</h1>
+          <h1 class={ Styles.title5 }>Heading</h1>
+          <h1 class={ Styles.title6 }>Heading</h1>
+        </div>
+      </div>
+      <div class={ Styles.bordWrapper }>
+        <div class={ Styles.titleWrapper }>
+          <h1 class={ Styles.title }>Type/Body</h1>
+        </div>
+        <div class={ Styles.titlesWrapper }>
+          <p class={ Styles.body1 }>Body</p>
+          <p class={ Styles.body2 }>Body</p>
+          <p class={ Styles.body3 }>Body</p>
+          <p class={ Styles.body4 }>Body</p>
+          <p class={ Styles.body5 }>Body</p>
+          <p class={ Styles.body6 }>Body</p>
+        </div>
+      </div>
+      <div class={ Styles.bordWrapper }>
+        <div class={ Styles.titleWrapper }>
+          <h1 class={ Styles.title }>Type/Ui</h1>
+        </div>
+        <div class={ Styles.titlesWrapper }>
+          <span class={ Styles.ui1 }>ui</span>
+          <span class={ Styles.ui2 }>ui</span>
+          <span class={ Styles.ui3 }>ui</span>
+          <span class={ Styles.ui4 }>ui</span>
+          <span class={ Styles.ui5 }>ui</span>
+          <span class={ Styles.ui6 }>ui</span>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

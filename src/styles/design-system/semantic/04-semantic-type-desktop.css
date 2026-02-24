@@ -1,0 +1,22 @@
+@import "../02-brand.css";
+
+:root {
+  --semantic-type-display-xs: var(--brand-font-weight-bold) var(--brand-font-size-display-xs) /var(--brand-font-line-display-xs) var(--brand-font-family-display);
+  --semantic-type-display-sm: var(--brand-font-weight-bold) var(--brand-font-size-display-sm) /var(--brand-font-line-display-sm) var(--brand-font-family-display);
+  --semantic-type-display-md: var(--brand-font-weight-bold) var(--brand-font-size-display-md) /var(--brand-font-line-display-md) var(--brand-font-family-display);
+  --semantic-type-display-lg: var(--brand-font-weight-bold) var(--brand-font-size-display-lg) /var(--brand-font-line-display-lg) var(--brand-font-family-display);
+  --semantic-type-display-xl: var(--brand-font-weight-bold) var(--brand-font-size-display-xl) /var(--brand-font-line-display-xl) var(--brand-font-family-display);
+  --semantic-type-display-2xl: var(--brand-font-weight-bold) var(--brand-font-size-display-2xl) /var(--brand-font-line-display-2xl) var(--brand-font-family-display);
+  --semantic-type-body-xs: var(--brand-font-weight-regular) var(--brand-font-size-body-xs) /var(--brand-font-line-body-xs) var(--brand-font-family-body);
+  --semantic-type-body-sm: var(--brand-font-weight-regular) var(--brand-font-size-body-sm) /var(--brand-font-line-body-sm) var(--brand-font-family-body);
+  --semantic-type-body-md: var(--brand-font-weight-regular) var(--brand-font-size-body-md) /var(--brand-font-line-body-md) var(--brand-font-family-body);
+  --semantic-type-body-lg: var(--brand-font-weight-regular) var(--brand-font-size-body-lg) /var(--brand-font-line-body-lg) var(--brand-font-family-body);
+  --semantic-type-body-xl: var(--brand-font-weight-regular) var(--brand-font-size-body-xl) /var(--brand-font-line-body-xl) var(--brand-font-family-body);
+  --semantic-type-body-2xl: var(--brand-font-weight-regular) var(--brand-font-size-body-2xl) /var(--brand-font-line-body-2xl) var(--brand-font-family-body);
+  --semantic-type-ui-xs: var(--brand-font-weight-regular) var(--brand-font-size-ui-xs) /var(--brand-font-line-ui-xs) var(--brand-font-family-ui);
+  --semantic-type-ui-sm: var(--brand-font-weight-regular) var(--brand-font-size-ui-sm) /var(--brand-font-line-ui-sm) var(--brand-font-family-ui);
+  --semantic-type-ui-md: var(--brand-font-weight-regular) var(--brand-font-size-ui-md) /var(--brand-font-line-ui-md) var(--brand-font-family-ui);
+  --semantic-type-ui-lg: var(--brand-font-weight-regular) var(--brand-font-size-ui-lg) /var(--brand-font-line-ui-lg) var(--brand-font-family-ui);
+  --semantic-type-ui-xl: var(--brand-font-weight-regular) var(--brand-font-size-ui-xl) /var(--brand-font-line-ui-xl) var(--brand-font-family-ui);
+  --semantic-type-ui-2xl: var(--brand-font-weight-regular) var(--brand-font-size-ui-2xl) /var(--brand-font-line-ui-2xl) var(--brand-font-family-ui);
+}

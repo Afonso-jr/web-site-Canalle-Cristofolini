@@ -1,8 +1,10 @@
 @import "./design-system/01-core.css";
 @import "./design-system/01-palette.css";
 @import "./design-system/02-brand.css";
-@import "./design-system/03-light.css";
-@import "./design-system/03-dark.css";
+@import "./design-system/theme/03-light.css";
+@import "./design-system/semantic/04-semantic-color.css";
+@import "./design-system/semantic/04-semantic-size-desktop.css";
+@import "./design-system/semantic/04-semantic-type-desktop.css";
 
 * {
     margin: 0;
@@ -11,48 +13,18 @@
 }
 
 :root {
-    --navHeight: var(--core-font-size-4xl);
+    --navHeight: var(--core-font-size-6xl);
 }
 
 body {
     font-family: Inter;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: var(--core-font-size-2xl);
-    padding-inline: var(--core-font-size-4xl);
-
-    background: var(--color-bg);
-    color: var(--color-text);
-    transition: background .25s ease, color .25s ease;
+    gap: var(--core-grid-gutter-desktop);
+    padding-inline: var(--core-grid-margin-desktop); 
+    background-color: var(--semantic-color-bg-page);
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-:root {
-    /* superfícies */
-    --color-bg: #ffffff;
-    --color-surface: #f8f9fa;
-  
-    /* texto */
-    --color-text: #111111;
-    --color-text-muted: #495057;
-  
-    /* exemplos para suas boxes */
-    --box-red: #ff6b6b;
-    --box-blue: #4dabf7;
-    --box-green: #51cf66;
-}
-
-.dark {
-    --color-bg: #0f172a;
-    --color-surface: #111827;
-  
-    --color-text: #e5e7eb;
-    --color-text-muted: #9ca3af;
-  
-    --box-red: #c92a2a;
-    --box-blue: #1864ab;
-    --box-green: #2b8a3e;
 }
