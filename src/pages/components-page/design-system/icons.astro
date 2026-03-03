@@ -1,0 +1,46 @@
+---
+import "../../../styles/global.css";
+import Styles from"../../../components/icons/icons.module.css";
+import { svgIcons } from "../../../components/icons/icons";
+
+const InformationIcon = svgIcons["information"];
+const ArrowRight = svgIcons["arrowRight"];
+const ArrowLeft = svgIcons["arrowLeft"];
+---
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Fast, modern websites built for performance, SEO, and an exceptional user experience."
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>SVG</title>
+    </head>
+    <body>
+        <section class={ Styles.iconWrapper }>
+            <div class={ Styles.iconsDiv }>
+                <h1>information:</h1>
+                { <InformationIcon /> }
+            </div>
+            <div class={ Styles.iconsDiv }>
+                <h1>arrowLeft:</h1>
+                { <ArrowRight /> }
+            </div>
+            <div class={ Styles.iconsDiv }>
+                <h1>arrowRight:</h1>
+                { <ArrowLeft /> }
+            </div>
+        </section>
+    </body>
+</html>
+
+
+
+
+
+
+
+

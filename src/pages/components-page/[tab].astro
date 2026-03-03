@@ -1,0 +1,66 @@
+---
+import Styles from "../../styles/components-page/components-page.module.css"
+import Buttons from "../components-page/design-system/buttons.astro";
+import Icons from "../components-page/design-system/icons.astro";
+import Typography from "../components-page/design-system/typography.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { tab: "buttons" } },
+    { params: { tab: "typography" } },
+    { params: { tab: "icons" } },
+  ];
+}
+
+const { tab } = Astro.params;
+
+const tabs = {
+  buttons: Buttons,
+  typography: Typography,
+  icons: Icons,
+};
+
+const ActiveComponent = tabs[tab as keyof typeof tabs] || Buttons;
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fast, modern websites built for performance, SEO, and an exceptional user experience."
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Componentes</title>
+  </head>
+  <body>
+    <div class={ Styles.wrapper }>
+      <aside class={ Styles.asideWrapper }>
+        <ul class={ Styles.listWrapper }>
+          <li class={ Styles.listItem }>
+            <a href="/components-page/buttons"
+               style={tab === "buttons" ? "font-weight:bold;" : ""}>
+              Buttons
+            </a>
+          </li>
+          <li class={ Styles.listItem }>
+            <a href="/components-page/typography"
+               style={tab === "typography" ? "font-weight:bold;" : ""}>
+              Typography
+            </a>
+          </li>
+          <li class={ Styles.listItem }>
+            <a href="/components-page/icons"
+               style={tab === "icons" ? "font-weight:bold;" : ""}>
+              Icons
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main style="flex:1;">
+        <ActiveComponent />
+      </main>
+    </div>
+  </body>
+</html>

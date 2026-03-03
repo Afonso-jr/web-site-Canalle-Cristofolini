@@ -1,0 +1,13 @@
+.iconWrapper {
+    margin-top: var(--navHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.iconsDiv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
