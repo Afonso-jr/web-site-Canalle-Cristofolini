@@ -1,14 +1,16 @@
-import Styles from "../button/button.module.css";
-import { svgIcons } from "../icons/icons";
+import Styles from "../ghostButton/ghost-button.module.css";
+import { svgIcons } from "../../icons/icons";
 import type { ReactNode } from "react";
 
 type Props = {
   children?: ReactNode;
   leftIcon?: string;
   rightIcon?: string;
+  disabled?: boolean;
+  size?: "sm" | "md" | "lg";
 };
 
-function Button({ children, leftIcon, rightIcon }: Props) {
+function GhostButton({ children, leftIcon, rightIcon, disabled = false, size = "lg", }: Props) {
   const getIcon = (iconName?: string) => {
     if (!iconName) return null;
 
@@ -19,7 +21,8 @@ function Button({ children, leftIcon, rightIcon }: Props) {
   };
 
   return (
-    <button className={Styles.buttonWrapper}>
+    <button disabled={disabled} className={`${Styles.buttonWrapper} ${Styles[size]}`}
+    >
       {leftIcon && getIcon(leftIcon)}
 
       {children && <span>{children}</span>}
@@ -29,4 +32,4 @@ function Button({ children, leftIcon, rightIcon }: Props) {
   );
 }
 
-export { Button };
+export { GhostButton };

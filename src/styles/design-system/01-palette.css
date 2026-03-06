@@ -23,18 +23,6 @@
     --palette-color-stone-800: #292524;
     --palette-color-stone-900: #1c1917;
     --palette-color-stone-950: #0c0a09;
-    --palette-color-tinted-25: #fcfcfd;
-    --palette-color-tinted-50: #f9fafb;
-    --palette-color-tinted-100: #f2f4f7;
-    --palette-color-tinted-200: #eaecf0;
-    --palette-color-tinted-300: #d0d5dd;
-    --palette-color-tinted-400: #98a2b3;
-    --palette-color-tinted-500: #667085;
-    --palette-color-tinted-600: #475467;
-    --palette-color-tinted-700: #344054;
-    --palette-color-tinted-800: #182230;
-    --palette-color-tinted-900: #101828;
-    --palette-color-tinted-950: #0c111d;
     --palette-color-red-25: #fffbfa;
     --palette-color-red-50: #fef3f2;
     --palette-color-red-100: #fee4e2;
@@ -263,4 +251,16 @@
     --palette-color-slate-800: #1e293b;
     --palette-color-slate-900: #0f172a;
     --palette-color-slate-950: #020617;
+    --palette-color-tinted-25: #fcfcfd;
+    --palette-color-tinted-50: #f9fafb;
+    --palette-color-tinted-100: #f2f4f7;
+    --palette-color-tinted-200: #eaecf0;
+    --palette-color-tinted-300: #d0d5dd;
+    --palette-color-tinted-400: #98a2b3;
+    --palette-color-tinted-500: #667085;
+    --palette-color-tinted-600: #475467;
+    --palette-color-tinted-700: #344054;
+    --palette-color-tinted-800: #182230;
+    --palette-color-tinted-900: #101828;
+    --palette-color-tinted-950: #0c111d;
 }

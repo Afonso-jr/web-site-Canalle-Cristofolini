@@ -42,7 +42,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     gap: var(--core-grid-gutter-desktop);
     padding-inline: var(--core-grid-margin-desktop); 
-    background-color: var(--semantic-color-bg-page);
+    background-color: var(--semantic-color-background-page);
 }
 
 html {

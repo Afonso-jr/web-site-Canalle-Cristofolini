@@ -1,0 +1,71 @@
+.buttonWrapper {
+    display: inline-flex;
+    color: var(--semantic-color-foreground-primary-default);
+    white-space: nowrap;
+    height: var(--semantic-size-ui-lg);
+    padding: 0 var(--semantic-size-gap-ui-5xl);
+    font: var(--semantic-type-ui-lg);
+    justify-content: center;
+    align-items: center;
+    gap: var(--semantic-size-gap-ui-xl);
+    border-radius: var(--semantic-size-radius-pill);
+    border: 0 solid var(--semantic-color-border-primary-default);
+    background: var(--core-color-base-transparent);
+    cursor: pointer;
+}
+
+.buttonWrapper svg {
+    height: 18px;
+    width: 18px;
+    fill: currentColor;
+}
+
+.buttonWrapper:hover {
+    border-radius: var(--semantic-size-radius-pill);
+    background: var(--semantic-color-background-primary-subtle-2);
+}
+
+.buttonWrapper:active {
+    border-radius: var(--semantic-size-radius-pill);
+    background: var(--semantic-color-background-primary-subtle-3);
+    box-shadow: 0 0 0 4px var(--semantic-shadow-primary-pressed);
+}
+
+.buttonWrapper:focus-visible {
+    outline: none;
+    border-radius: var(--semantic-size-radius-pill);
+    border: var(--semantic-size-borderWidth-focus) solid rgba(255, 255, 255, 0.01);
+    background: var(--semantic-color-background-primary-strong-1);
+    box-shadow: 0 0 0 4px var(--semantic-color-border-focus);
+}
+
+.buttonWrapper:disabled {
+    box-shadow: none;
+    color: var(--semantic-color-foreground-disabled);
+    border-radius: var(--semantic-size-radius-pill);
+    background: var(--semantic-color-background-disabled);
+}
+
+.md {
+    font: var(--semantic-type-ui-md);
+    height: var(--semantic-size-ui-md);
+    padding: 0 var(--semantic-size-gap-ui-3xl);
+    gap: var(--semantic-size-gap-ui-lg);
+}
+
+.md svg {
+    height: 16px;
+    width: 16px;
+}
+
+.sm {
+    font: var(--semantic-type-ui-sm);
+    height: var(--semantic-size-ui-sm);
+    padding: 0 var(--semantic-size-gap-ui-2xl);
+    gap: var(--semantic-size-gap-ui-md);
+}
+
+.sm svg {
+    height: 14px;
+    width: 14px;
+}

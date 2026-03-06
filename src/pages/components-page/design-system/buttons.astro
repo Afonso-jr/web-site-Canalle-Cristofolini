@@ -1,6 +1,9 @@
 ---
 import Styles from "../../../styles/components-page/buttons/buttons.module.css";
-import { Button } from "../../../components/button/button";
+import { FilledButton } from "../../../components/buttons/filledButton/filledButton";
+import { OutlinedButton } from "../../../components/buttons/outlinedButton/outlinedButton";
+import { GhostButton } from "../../../components/buttons/ghostButton/ghostButton";
+import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextLinkButton";
 ---
 
 <html lang="en">
@@ -16,11 +19,120 @@ import { Button } from "../../../components/button/button";
 		<title>Fast & Modern Websites</title>
 	<body>
 		<section class={ Styles.wrapper }>
-			<Button rightIcon="arrowRight" leftIcon="arrowLeft">
-				Aperte
-			</Button>
-			<Button>Aperte</Button>
-			<Button leftIcon="information" />
+			<h1>Botão Filled</h1>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Large</p>
+				<FilledButton rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton>Só texto</FilledButton>
+				<FilledButton leftIcon="information" />
+				<FilledButton leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Mid</p>
+				<FilledButton size="md" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton size="md" >Só texto</FilledButton>
+				<FilledButton size="md" leftIcon="information" />
+				<FilledButton size="md" leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Small</p>
+				<FilledButton size="sm" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton size="sm">Só texto</FilledButton>
+				<FilledButton size="sm" leftIcon="information" />
+				<FilledButton size="sm" leftIcon="information" disabled={ true } />
+			</div>
+			<h1>Botão Outlined</h1>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Large</p>
+				<OutlinedButton rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</OutlinedButton>
+				<OutlinedButton>Só texto</OutlinedButton>
+				<OutlinedButton leftIcon="information" />
+				<OutlinedButton leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Mid</p>
+				<OutlinedButton size="md" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</OutlinedButton>
+				<OutlinedButton size="md" >Só texto</OutlinedButton>
+				<OutlinedButton size="md" leftIcon="information" />
+				<OutlinedButton size="md" leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Small</p>
+				<OutlinedButton size="sm" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</OutlinedButton>
+				<OutlinedButton size="sm">Só texto</OutlinedButton>
+				<OutlinedButton size="sm" leftIcon="information" />
+				<OutlinedButton size="sm" leftIcon="information" disabled={ true } />
+			</div>
+			<h1>Botão Ghost</h1>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Large</p>
+				<GhostButton rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</GhostButton>
+				<GhostButton>Só texto</GhostButton>
+				<GhostButton leftIcon="information" />
+				<GhostButton leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Mid</p>
+				<GhostButton size="md" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</GhostButton>
+				<GhostButton size="md" >Só texto</GhostButton>
+				<GhostButton size="md" leftIcon="information" />
+				<GhostButton size="md" leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Small</p>
+				<GhostButton size="sm" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</GhostButton>
+				<GhostButton size="sm">Só texto</GhostButton>
+				<GhostButton size="sm" leftIcon="information" />
+				<GhostButton size="sm" leftIcon="information" disabled={ true } />
+			</div>
+			<h1>Botão Ghost</h1>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Large</p>
+				<TextLinkButton rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</TextLinkButton>
+				<TextLinkButton>Só texto</TextLinkButton>
+				<TextLinkButton leftIcon="information" />
+				<TextLinkButton leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Mid</p>
+				<TextLinkButton size="md" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</TextLinkButton>
+				<TextLinkButton size="md" >Só texto</TextLinkButton>
+				<TextLinkButton size="md" leftIcon="information" />
+				<TextLinkButton size="md" leftIcon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Small</p>
+				<TextLinkButton size="sm" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</TextLinkButton>
+				<TextLinkButton size="sm">Só texto</TextLinkButton>
+				<TextLinkButton size="sm" leftIcon="information" />
+				<TextLinkButton size="sm" leftIcon="information" disabled={ true } />
+			</div>
 		</section>
 	</body>
 </html>
+
+

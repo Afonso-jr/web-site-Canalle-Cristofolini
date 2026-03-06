@@ -1,6 +1,7 @@
 ---
 import Styles from "../../../styles/components-page/typography/typography.module.css";
 import "../../../styles/global.css";
+import Tooltip from "../../../components/tooltip/tooltip"
 ---
 
 <html lang="pt-br">
@@ -54,6 +55,20 @@ import "../../../styles/global.css";
                     <span class={ Styles.ui5 }>ui</span>
                     <span class={ Styles.ui6 }>ui</span>
                 </div>
+            </div>
+            <div class={ Styles.tooltipWrapper }>
+                <Tooltip text="Que texto maneiro">
+                    <span>Tooltip top</span>
+                </Tooltip>
+                <Tooltip text="Que texto maneiro" position="bottom">
+                    <span>Tooltip baixo</span>
+                </Tooltip>
+                <Tooltip text="Que texto maneiro" position="right">
+                    <span>Tooltip direita</span>
+                </Tooltip>
+                <Tooltip text="Que texto maneiro" position="left">
+                    <span>Tooltip esqueda</span>
+                </Tooltip>
             </div>
         </section>
     </body>
