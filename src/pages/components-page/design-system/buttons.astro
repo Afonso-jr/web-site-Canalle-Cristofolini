@@ -1,9 +1,11 @@
 ---
 import Styles from "../../../styles/components-page/buttons/buttons.module.css";
 import { FilledButton } from "../../../components/buttons/filledButton/filledButton";
+import { IconFilledButton } from "../../../components/buttons/filledButton/iconFilledButton";
 import { OutlinedButton } from "../../../components/buttons/outlinedButton/outlinedButton";
+import { IconOutlinedButton } from "../../../components/buttons/outlinedButton/iconOutlinedButton";
 import { GhostButton } from "../../../components/buttons/ghostButton/ghostButton";
-import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextLinkButton";
+import { IconGhostButton } from "../../../components/buttons/ghostButton/iconGhostButton";
 ---
 
 <html lang="en">
@@ -26,8 +28,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</FilledButton>
 				<FilledButton>Só texto</FilledButton>
-				<FilledButton leftIcon="information" />
-				<FilledButton leftIcon="information" disabled={ true } />
+				<IconFilledButton icon="information" />
+				<IconFilledButton icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Mid</p>
@@ -35,8 +37,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</FilledButton>
 				<FilledButton size="md" >Só texto</FilledButton>
-				<FilledButton size="md" leftIcon="information" />
-				<FilledButton size="md" leftIcon="information" disabled={ true } />
+				<IconFilledButton size="md" icon="information" />
+				<IconFilledButton size="md" icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Small</p>
@@ -44,8 +46,42 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</FilledButton>
 				<FilledButton size="sm">Só texto</FilledButton>
-				<FilledButton size="sm" leftIcon="information" />
-				<FilledButton size="sm" leftIcon="information" disabled={ true } />
+				<IconFilledButton size="sm" icon="information" />
+				<IconFilledButton size="sm" icon="information" disabled={ true } />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Secundary</p>
+				<FilledButton variant="secundary" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton variant="secundary">Só texto</FilledButton>
+				<IconFilledButton variant="secundary" icon="information" />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Danger</p>
+				<FilledButton variant="danger" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton variant="danger">Só texto</FilledButton>
+				<IconFilledButton variant="danger" icon="information" />
+			</div>
+			<div class={ Styles.buttonsWrapper }>
+				<p>Neutral</p>
+				<FilledButton variant="neutral" rightIcon="arrowRight" leftIcon="arrowLeft">
+					Com ambos os icones laterais
+				</FilledButton>
+				<FilledButton variant="neutral">Só texto</FilledButton>
+				<IconFilledButton variant="neutral" icon="information" />
+			</div>
+			<div class=`${Styles.buttonsWrapper} `>
+				<p>Inverse</p>
+				<div class={ Styles.inverse }>
+					<FilledButton variant="inverse" rightIcon="arrowRight" leftIcon="arrowLeft">
+						Com ambos os icones laterais
+					</FilledButton>
+					<FilledButton variant="inverse">Só texto</FilledButton>
+					<IconFilledButton variant="inverse" icon="information" />
+				</div>
 			</div>
 			<h1>Botão Outlined</h1>
 			<div class={ Styles.buttonsWrapper }>
@@ -54,8 +90,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</OutlinedButton>
 				<OutlinedButton>Só texto</OutlinedButton>
-				<OutlinedButton leftIcon="information" />
-				<OutlinedButton leftIcon="information" disabled={ true } />
+				<IconOutlinedButton icon="information" />
+				<IconOutlinedButton icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Mid</p>
@@ -63,8 +99,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</OutlinedButton>
 				<OutlinedButton size="md" >Só texto</OutlinedButton>
-				<OutlinedButton size="md" leftIcon="information" />
-				<OutlinedButton size="md" leftIcon="information" disabled={ true } />
+				<IconOutlinedButton size="md" icon="information" />
+				<IconOutlinedButton size="md" icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Small</p>
@@ -72,8 +108,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</OutlinedButton>
 				<OutlinedButton size="sm">Só texto</OutlinedButton>
-				<OutlinedButton size="sm" leftIcon="information" />
-				<OutlinedButton size="sm" leftIcon="information" disabled={ true } />
+				<IconOutlinedButton size="sm" icon="information" />
+				<IconOutlinedButton size="sm" icon="information" disabled={ true } />
 			</div>
 			<h1>Botão Ghost</h1>
 			<div class={ Styles.buttonsWrapper }>
@@ -82,8 +118,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</GhostButton>
 				<GhostButton>Só texto</GhostButton>
-				<GhostButton leftIcon="information" />
-				<GhostButton leftIcon="information" disabled={ true } />
+				<IconGhostButton icon="information" />
+				<IconGhostButton icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Mid</p>
@@ -91,8 +127,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</GhostButton>
 				<GhostButton size="md" >Só texto</GhostButton>
-				<GhostButton size="md" leftIcon="information" />
-				<GhostButton size="md" leftIcon="information" disabled={ true } />
+				<IconGhostButton size="md" icon="information" />
+				<IconGhostButton size="md" icon="information" disabled={ true } />
 			</div>
 			<div class={ Styles.buttonsWrapper }>
 				<p>Small</p>
@@ -100,36 +136,8 @@ import { TextLinkButton } from "../../../components/buttons/textLinkButton/TextL
 					Com ambos os icones laterais
 				</GhostButton>
 				<GhostButton size="sm">Só texto</GhostButton>
-				<GhostButton size="sm" leftIcon="information" />
-				<GhostButton size="sm" leftIcon="information" disabled={ true } />
-			</div>
-			<h1>Botão Ghost</h1>
-			<div class={ Styles.buttonsWrapper }>
-				<p>Large</p>
-				<TextLinkButton rightIcon="arrowRight" leftIcon="arrowLeft">
-					Com ambos os icones laterais
-				</TextLinkButton>
-				<TextLinkButton>Só texto</TextLinkButton>
-				<TextLinkButton leftIcon="information" />
-				<TextLinkButton leftIcon="information" disabled={ true } />
-			</div>
-			<div class={ Styles.buttonsWrapper }>
-				<p>Mid</p>
-				<TextLinkButton size="md" rightIcon="arrowRight" leftIcon="arrowLeft">
-					Com ambos os icones laterais
-				</TextLinkButton>
-				<TextLinkButton size="md" >Só texto</TextLinkButton>
-				<TextLinkButton size="md" leftIcon="information" />
-				<TextLinkButton size="md" leftIcon="information" disabled={ true } />
-			</div>
-			<div class={ Styles.buttonsWrapper }>
-				<p>Small</p>
-				<TextLinkButton size="sm" rightIcon="arrowRight" leftIcon="arrowLeft">
-					Com ambos os icones laterais
-				</TextLinkButton>
-				<TextLinkButton size="sm">Só texto</TextLinkButton>
-				<TextLinkButton size="sm" leftIcon="information" />
-				<TextLinkButton size="sm" leftIcon="information" disabled={ true } />
+				<IconGhostButton size="sm" icon="information" />
+				<IconGhostButton size="sm" icon="information" disabled={ true } />
 			</div>
 		</section>
 	</body>

@@ -15,3 +15,12 @@
     gap: 12px;
     width: 100%;
 }
+
+.inverse {
+    display: flex;
+    gap: 12px;
+    padding-inline: 12px;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+}

@@ -34,9 +34,10 @@
 .buttonWrapper:focus-visible {
     outline: none;
     border-radius: var(--semantic-size-radius-pill);
-    border: var(--semantic-size-borderWidth-focus) solid rgba(255, 255, 255, 0.01);
-    background: var(--semantic-color-background-primary-strong-1);
-    box-shadow: 0 0 0 4px var(--semantic-color-border-focus);
+  
+    box-shadow:
+    0 0 0 2px white,
+    0 0 0 8px var(--semantic-color-border-focus); 
 }
 
 .buttonWrapper:disabled {
@@ -44,6 +45,7 @@
     color: var(--semantic-color-foreground-disabled);
     border-radius: var(--semantic-size-radius-pill);
     background: var(--semantic-color-background-disabled);
+    border: none;
 }
 
 .md {
@@ -68,4 +70,19 @@
 .sm svg {
     height: 14px;
     width: 14px;
+}
+
+.icon.lg {
+    width: var(--semantic-size-ui-lg);
+    height: var(--semantic-size-ui-lg);
+}
+  
+.icon.md {
+    width: var(--semantic-size-ui-md, 40px);
+    height: var(--semantic-size-ui-md, 40px);
+}
+  
+.icon.sm {
+    width: var(--semantic-size-ui-sm, 32px);
+    height: var(--semantic-size-ui-sm, 32px);
 }

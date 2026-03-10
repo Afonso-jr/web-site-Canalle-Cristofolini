@@ -36,9 +36,10 @@
 .buttonWrapper:focus-visible {
     outline: none;
     border-radius: var(--semantic-size-radius-pill);
-    border: var(--semantic-size-borderWidth-focus) solid rgba(255, 255, 255, 0.01);
-    background: var(--semantic-color-background-primary-strong-1);
-    box-shadow: 0 0 0 4px var(--semantic-color-border-focus);
+  
+    box-shadow:
+    0 0 0 2px white,
+    0 0 0 8px var(--semantic-color-border-focus); 
 }
 
 .buttonWrapper:disabled {
@@ -70,4 +71,85 @@
 .sm svg {
     height: 14px;
     width: 14px;
+}
+
+.icon.lg {
+    width: var(--semantic-size-ui-lg);
+    height: var(--semantic-size-ui-lg);
+}
+  
+.icon.md {
+    width: var(--semantic-size-ui-md, 40px);
+    height: var(--semantic-size-ui-md, 40px);
+}
+  
+.icon.sm {
+    width: var(--semantic-size-ui-sm, 32px);
+    height: var(--semantic-size-ui-sm, 32px);
+}
+
+.primary {
+    background: var(--semantic-color-background-primary-strong-1);
+}
+
+.primary:hover {
+    background: var(--semantic-color-background-primary-strong-2);
+}
+
+.primary:active {
+    background: var(--semantic-color-background-primary-strong-3);
+}
+
+.secundary {
+    background: var(--semantic-color-background-accent-strong-1);
+}
+
+.secundary:hover {
+    background: var(--semantic-color-background-accent-strong-2);
+}
+
+.secundary:active {
+    background: var(--semantic-color-background-accent-strong-3);
+    box-shadow: 0 0 0 4px var(--semantic-shadow-accent-pressed);
+}
+
+.danger {
+    color: var(--semantic-color-foreground-on-error);
+    background: var(--semantic-color-background-error-strong-1);
+}
+
+.danger:hover {
+    background: var(--semantic-color-background-error-strong-2);
+}
+
+.danger:active {
+    background: var(--semantic-color-background-error-strong-3);
+    box-shadow: 0 0 0 4px var(--semantic-shadow-error-pressed);
+}
+
+.neutral {
+    color: var(--semantic-color-foreground-on-neutral);
+    background: var(--semantic-color-background-neutral-strong-1);
+}
+
+.neutral:hover {
+    background: var(--semantic-color-background-neutral-strong-2);
+}
+
+.neutral:active {
+    background: var(--semantic-color-background-neutral-strong-3);
+    box-shadow: 0 0 0 4px var(--semantic-shadow-neutral-pressed);
+}
+
+.inverse {
+    background: var(--semantic-color-background-inverse-1);
+}
+
+.inverse:hover {
+    background: var(--semantic-color-background-inverse-2);
+}
+
+.inverse:active {
+    background: var(--semantic-color-background-inverse-3);
+    box-shadow: 0 0 0 4px var(--semantic-shadow-inverse-pressed);
 }

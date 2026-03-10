@@ -8,9 +8,17 @@ type Props = {
   rightIcon?: string;
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
+  variant?: "primary" | "secundary" | "neutral" | "danger" | "inverse";
 };
 
-function FilledButton({ children, leftIcon, rightIcon, disabled = false, size = "lg", }: Props) {
+function FilledButton({ 
+  children,
+  leftIcon,
+  rightIcon,
+  disabled = false,
+  size = "lg",
+  variant = "primary",
+}: Props) {
   const getIcon = (iconName?: string) => {
     if (!iconName) return null;
 
@@ -21,7 +29,7 @@ function FilledButton({ children, leftIcon, rightIcon, disabled = false, size = 
   };
 
   return (
-    <button disabled={disabled} className={`${Styles.buttonWrapper} ${Styles[size]}`}
+    <button disabled={disabled} className={`${Styles.buttonWrapper} ${Styles[size]} ${Styles[variant]}`}
     >
       {leftIcon && getIcon(leftIcon)}
 
