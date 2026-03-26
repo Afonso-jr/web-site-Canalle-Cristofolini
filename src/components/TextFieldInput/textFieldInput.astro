@@ -1,0 +1,45 @@
+---
+import Styles from "../TextFieldInput/text-field-input.module.css"
+
+interface Props {
+  label: string;
+  name: string;
+  type?: astroHTML.JSX.HTMLInputTypeAttribute;
+  placeholder?: string;
+  required?: boolean;
+  value?: string;
+  className?: string;
+}
+
+const {
+  label,
+  name,
+  type = "text",
+  placeholder = "",
+  required = false,
+  value = "",
+} = Astro.props;
+
+const id = `${name}-${Math.random().toString(36).substring(2, 6)}`;
+---
+
+<div class={ Styles.inputWrapper }>
+  <label for={id} class={ Styles.label }>
+    {label}
+    {required && <span style="color: red;"> *</span>}
+  </label>
+
+  <input
+    type={type}
+    id={id}
+    name={name}
+    placeholder={placeholder}
+    required={required}
+    value={value}
+    class={ Styles.input }
+    data-field={name}
+  />
+
+  <span class={Styles.supportText} data-error-for={name}></span>
+
+</div>

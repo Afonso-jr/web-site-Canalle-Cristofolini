@@ -3,12 +3,13 @@ import { svgIcons } from "../../icons/icons";
 
 type Props = {
   icon?: string;
+  type?: "button" | "submit" | "reset";
   disabled?: boolean;
   size?: "sm" | "md" | "lg";
   variant?: "primary" | "secundary" | "neutral" | "danger" | "inverse";
 }
 
-function IconFilledButton({ icon, disabled = false, size = "lg", variant="primary" }: Props) {
+function IconFilledButton({ icon, type='button', disabled = false, size = "lg", variant="primary" }: Props) {
   const getIcon = (iconName?: string) => {
     if (!iconName) return null;
 
@@ -19,7 +20,7 @@ function IconFilledButton({ icon, disabled = false, size = "lg", variant="primar
   };
 
   return (
-    <button disabled={disabled} className={`${Styles.buttonWrapper} ${Styles[size]} ${Styles.icon} ${Styles[variant]}`}
+    <button type={ type } disabled={disabled} className={`${Styles.buttonWrapper} ${Styles[size]} ${Styles.icon} ${Styles[variant]}`}
     >
       { getIcon(icon) }
     </button>

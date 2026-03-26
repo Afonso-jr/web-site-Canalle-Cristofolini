@@ -1,0 +1,13 @@
+.sectionWrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}

@@ -3,12 +3,14 @@ import Styles from "../../styles/components-page/components-page.module.css"
 import Buttons from "../components-page/design-system/buttons.astro";
 import Icons from "../components-page/design-system/icons.astro";
 import Typography from "../components-page/design-system/typography.astro";
+import TextFieldPage from "../components-page/design-system/textFieldPage.astro";
 
 export function getStaticPaths() {
   return [
     { params: { tab: "buttons" } },
     { params: { tab: "typography" } },
     { params: { tab: "icons" } },
+    { params: { tab: "textField" } },
   ];
 }
 
@@ -18,6 +20,7 @@ const tabs = {
   buttons: Buttons,
   typography: Typography,
   icons: Icons,
+  textField: TextFieldPage,
 };
 
 const ActiveComponent = tabs[tab as keyof typeof tabs] || Buttons;
@@ -56,9 +59,15 @@ const ActiveComponent = tabs[tab as keyof typeof tabs] || Buttons;
               Icons
             </a>
           </li>
+          <li class={ Styles.listItem }>
+            <a href="/components-page/textField"
+               style={tab === "textField" ? "font-weight:bold;" : ""}>
+               Text Field
+            </a>
+          </li>
         </ul>
       </aside>
-      <main style="flex:1;">
+      <main>
         <ActiveComponent />
       </main>
     </div>
